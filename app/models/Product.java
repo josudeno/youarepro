@@ -1,8 +1,9 @@
 package models;
 
-import javax.persistence.*;
+import com.avaje.ebean.Model;
 
-import com.avaje.ebean.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * Created by Indy on 27-3-2016.
@@ -16,6 +17,8 @@ public class Product extends Model {
     public Integer id;
 
     public String name;
+
+    private String description;
 
     public Product() {}
 

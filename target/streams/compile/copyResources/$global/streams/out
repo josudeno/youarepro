@@ -1,0 +1,9 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/application.conf,/home/josh/Java/youarepro/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/evolutions.youarepro,/home/josh/Java/youarepro/target/scala-2.11/classes/evolutions.youarepro)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/evolutions,/home/josh/Java/youarepro/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/logback.xml,/home/josh/Java/youarepro/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/routes,/home/josh/Java/youarepro/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/evolutions.youarepro/script.sql,/home/josh/Java/youarepro/target/scala-2.11/classes/evolutions.youarepro/script.sql)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/evolutions/default,/home/josh/Java/youarepro/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/josh/Java/youarepro/conf/evolutions/default/1.sql,/home/josh/Java/youarepro/target/scala-2.11/classes/evolutions/default/1.sql)[0m

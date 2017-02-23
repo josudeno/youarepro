@@ -1,18 +1,15 @@
 package controllers;
 
+import com.avaje.ebean.Model;
 import models.Product;
-import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
-import play.mvc.*;
-
+import play.mvc.Controller;
+import play.mvc.Result;
 import views.html.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import com.avaje.ebean.Model;
-
 import javax.inject.Inject;
+import java.util.List;
 
 import static play.libs.Json.toJson;
 

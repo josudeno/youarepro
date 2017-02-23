@@ -1,4 +1,4 @@
-# PlayDemo
+# youarepro
 Demo functionality of Java Play Framework
 
 This code is relevant for the following versions:
