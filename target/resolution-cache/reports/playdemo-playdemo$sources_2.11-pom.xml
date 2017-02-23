@@ -4,10 +4,10 @@
 	<info
 		organisation="playdemo"
 		module="playdemo$sources_2.11"
-		revision="1.0-SNAPSHOT"
+		revision="1.0.0"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170223095403"/>
+		date="20170223132138"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>
