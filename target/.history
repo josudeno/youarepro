@@ -1,2 +1,8 @@
 compile
 run
+compile
+run
+h2-browser
+play debug
+debug
+playStop

@@ -1,5 +1,6 @@
 # youarepro
-Demo functionality of Java Play Framework
+
+Small social network site.
 
 This code is relevant for the following versions:
 

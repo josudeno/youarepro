@@ -4,11 +4,14 @@ import com.avaje.ebean.Model;
 import models.Product;
 import play.data.Form;
 import play.data.FormFactory;
+import play.db.Database;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.*;
+import views.html.index;
 
 import javax.inject.Inject;
+import java.sql.SQLException;
 import java.util.List;
 
 import static play.libs.Json.toJson;
@@ -21,6 +24,13 @@ public class HomeController extends Controller {
 
     @Inject
     private FormFactory formFactory;
+
+    private Database db;
+
+    @Inject
+    public HomeController(Database db) {
+        this.db = db;
+    }
 
     /**
      * An action that renders an HTML page with a welcome message.
@@ -44,5 +54,14 @@ public class HomeController extends Controller {
         Model.Finder<Integer, Product> finder = new Model.Finder<>(Product.class);
         List<Product> products = finder.all();
         return ok(toJson(products));
+    }
+
+    public Result search() throws SQLException {
+        Model.Finder<Integer, Product> finder = new Model.Finder<>(Product.class);
+        String search = request().getQueryString("product");
+        List<Product> products = finder.where().ilike("name", search).findList();
+
+        return ok(Json.toJson(products));
+
     }
 }

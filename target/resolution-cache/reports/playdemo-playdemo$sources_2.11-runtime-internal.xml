@@ -7,7 +7,7 @@
 		revision="1.0.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170223132138"/>
+		date="20170223150012"/>
 	<dependencies>
 		<module organisation="org.webjars" name="bootstrap">
 			<revision name="3.3.4" status="release" pubdate="20150316160734" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="95">

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/josh/Java/youarepro/conf/routes
-// @DATE:Thu Feb 23 12:42:09 GMT 2017
+// @DATE:Thu Feb 23 18:38:57 GMT 2017
 
 package controllers;
 

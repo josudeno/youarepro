@@ -56,6 +56,7 @@ create table user (
   constraint uq_user_email unique (email),
   constraint pk_user primary key (uid)
 );
+create sequence user_seq;
 
 
 # --- !Downs
@@ -76,4 +77,5 @@ drop table if exists product;
 drop sequence if exists product_seq;
 
 drop table if exists user;
+drop sequence if exists user_seq;
 

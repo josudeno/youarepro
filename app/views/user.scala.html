@@ -1,7 +1,3 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
 @(message: String)
 
 @*
@@ -12,30 +8,35 @@
 @main("youarepro") {
 
     <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/styles.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("lib/bootstrap/css/bootstrap.css")">
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row-fluid">
-            <p>Sign up @message</p>
+            <h1>@message</h1>
 
-            <form action="@routes.UserController.signup()" method="post" class="form-horizontal">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" name="name">
-                </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form action="@routes.UserController.signup()" method="post" class="form-horizontal">
 
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Register</button>
+                    </div>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-
-                <button type="submit" class="btn btn-default">Register</button>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 }

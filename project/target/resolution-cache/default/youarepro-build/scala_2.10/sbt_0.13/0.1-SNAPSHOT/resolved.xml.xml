@@ -4,7 +4,7 @@
 		module="youarepro-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170223125813"
+		publication="20170224100203"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

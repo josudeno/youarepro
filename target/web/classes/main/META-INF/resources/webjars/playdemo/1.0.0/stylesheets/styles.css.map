@@ -1,0 +1,9 @@
+{
+  "version" : 3,
+  "sourceRoot" : "/assets/",
+  "file" : "styles.css",
+  "sources" : [ "stylesheets/styles.scss" ],
+  "sourcesContent" : [ "$purple: #800080;\n$red: #d61c11;\n$blue: #000060;\n$hover-blue: #2c2c66;\n$purple-light: #8800ff;\n$light-purple: #ba82ff;\n$green: #a1ffc8;\n$white: #fff;\n$aqua: #47ffcf;\n$purple-dark: #8800ff;\n$cream: #f8edda99;\n$black: #000;\n$yellow: #fece00;\n$dark-grey: #161616;\n$grey: #aaaaaa;\n$background: #F2F2F2;\n\n\n/**** about ****/\nbody {\n  &.page-id-47,\n  &.page-id-321 {\n    #top {\n      min-height: 100vh;\n    }\n  }\n}\n\n.footer-wrapper {\n  background-color: $dark-grey;\n  footer {\n    background-color: $dark-grey;\n    .footer-duck {\n      text-align: center;\n      p {\n        color: $white;\n        &.powered {\n          color: $yellow;\n        }\n      }\n    }\n  }\n}\n.sec-about, .sec-flow{\n  display: none;\n}\n\n" ],
+  "mappings" : "AAmBA,AAGI,IAHA,AACD,WAAW,CAEV,IAAI,CAHR,AAGI,IAHA,AAED,YAAY,CACX,IAAI,AAAC,CACH,UAAU,CAAE,KAAM,CACnB,AAIL,AAAA,eAAe,AAAC,CACd,gBAAgB,CAhBN,OAAO,CA6BlB,AAdD,AAEE,eAFa,CAEb,MAAM,AAAC,CACL,gBAAgB,CAlBR,OAAO,CA4BhB,AAbH,AAII,eAJW,CAEb,MAAM,CAEJ,YAAY,AAAC,CACX,UAAU,CAAE,MAAO,CAOpB,AAZL,AAMM,eANS,CAEb,MAAM,CAEJ,YAAY,CAEV,CAAC,AAAC,CACA,KAAK,CA5BL,IAAI,CAgCL,AAXP,AAMM,eANS,CAEb,MAAM,CAEJ,YAAY,CAEV,CAAC,AAEE,QAAQ,AAAC,CACR,KAAK,CAzBN,OAAO,CA0BP,AAKT,AAAA,UAAU,CAAE,AAAA,SAAS,AAAA,CACnB,OAAO,CAAE,IAAK,CACf",
+  "names" : [ ]
+}

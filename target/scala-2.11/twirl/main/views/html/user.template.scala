@@ -23,48 +23,50 @@ import play.mvc.Http.Context.Implicit._
 
 class user extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
-  /*
- * This template takes a single argument, a String containing a
- * message to display.
- */
-  def apply/*5.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
+  /**/
+  def apply/*1.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*5.19*/("""
+Seq[Any](format.raw/*1.19*/("""
 
-"""),format.raw/*11.4*/("""
-"""),_display_(/*12.2*/main("youarepro")/*12.19*/ {_display_(Seq[Any](format.raw/*12.21*/("""
+"""),format.raw/*7.4*/("""
+"""),_display_(/*8.2*/main("youarepro")/*8.19*/ {_display_(Seq[Any](format.raw/*8.21*/("""
 
-    """),format.raw/*14.5*/("""<link rel="stylesheet" href=""""),_display_(/*14.35*/routes/*14.41*/.Assets.at("stylesheets/main.css")),format.raw/*14.75*/("""">
+    """),format.raw/*10.5*/("""<link rel="stylesheet" href=""""),_display_(/*10.35*/routes/*10.41*/.Assets.at("stylesheets/main.css")),format.raw/*10.75*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*11.35*/routes/*11.41*/.Assets.at("stylesheets/styles.css")),format.raw/*11.77*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*12.35*/routes/*12.41*/.Assets.at("lib/bootstrap/css/bootstrap.css")),format.raw/*12.86*/("""">
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row-fluid">
-            <p>Sign up """),_display_(/*19.25*/message),format.raw/*19.32*/("""</p>
+            <h1>"""),_display_(/*17.18*/message),format.raw/*17.25*/("""</h1>
 
-            <form action=""""),_display_(/*21.28*/routes/*21.34*/.UserController.signup()),format.raw/*21.58*/("""" method="post" class="form-horizontal">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" name="name">
-                </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form action=""""),_display_(/*20.32*/routes/*20.38*/.UserController.signup()),format.raw/*20.62*/("""" method="post" class="form-horizontal">
 
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Register</button>
+                    </div>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-
-                <button type="submit" class="btn btn-default">Register</button>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-""")))}),format.raw/*41.2*/("""
+""")))}),format.raw/*42.2*/("""
 """))
       }
     }
@@ -81,18 +83,15 @@ Seq[Any](format.raw/*5.19*/("""
 
 }
 
-/*
- * This template takes a single argument, a String containing a
- * message to display.
- */
+/**/
 object user extends user_Scope0.user
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 23 13:01:37 GMT 2017
+                  DATE: Thu Feb 23 15:24:18 GMT 2017
                   SOURCE: /home/josh/Java/youarepro/app/views/user.scala.html
-                  HASH: 254f1b7814b0ad72e4ef90db8016a39d24e202c8
-                  MATRIX: 832->95|944->112|973->312|1001->314|1027->331|1067->333|1100->339|1157->369|1172->375|1227->409|1343->498|1371->505|1431->538|1446->544|1491->568|2455->1502
-                  LINES: 30->5|35->5|37->11|38->12|38->12|38->12|40->14|40->14|40->14|40->14|45->19|45->19|47->21|47->21|47->21|67->41
+                  HASH: 2b371cb51cf46b2333624d41bc642d9c297a152c
+                  MATRIX: 743->1|855->18|883->218|910->220|935->237|974->239|1007->245|1064->275|1079->281|1134->315|1198->352|1213->358|1270->394|1334->431|1349->437|1415->482|1530->570|1558->577|1674->666|1689->672|1734->696|2852->1784
+                  LINES: 27->1|32->1|34->7|35->8|35->8|35->8|37->10|37->10|37->10|37->10|38->11|38->11|38->11|39->12|39->12|39->12|44->17|44->17|47->20|47->20|47->20|69->42
                   -- GENERATED --
               */
           

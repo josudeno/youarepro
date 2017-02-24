@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/josh/Java/youarepro/conf/routes
-// @DATE:Thu Feb 23 12:42:09 GMT 2017
+// @DATE:Thu Feb 23 18:38:57 GMT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:28
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
@@ -65,7 +65,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:22
+  // @LINE:23
   class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -73,17 +73,27 @@ package controllers.javascript {
     }
 
   
-    // @LINE:23
-    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.UserController.signup",
+    // @LINE:24
+    def list: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.list",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/signup"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/list"})
         }
       """
     )
   
-    // @LINE:22
+    // @LINE:25
+    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.signup",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user/signup"})
+        }
+      """
+    )
+  
+    // @LINE:23
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.index",
       """
@@ -103,7 +113,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:18
     def addProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addProduct",
       """
@@ -119,6 +129,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def search: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.search",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
         }
       """
     )

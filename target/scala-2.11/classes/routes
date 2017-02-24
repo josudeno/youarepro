@@ -13,6 +13,7 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /products                   controllers.HomeController.getProducts
+GET     /search                     controllers.HomeController.search
 
 POST    /addProduct                 controllers.HomeController.addProduct
 
@@ -20,7 +21,8 @@ POST    /addProduct                 controllers.HomeController.addProduct
 #GET /hello/:name/:age   controllers.HelloWorld.index(name: String, age: Int)
 
 GET     /user                       controllers.UserController.index()
-GET     /user/signup                controllers.UserController.signup
+GET     /user/list                  controllers.UserController.list
+POST    /user/signup                controllers.UserController.signup
 
 # Map static resources from the /public folder to the /assets URL path
 GET		/assets/*file			    controllers.Assets.at(path="/public", file)

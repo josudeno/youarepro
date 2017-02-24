@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/josh/Java/youarepro/conf/routes
-// @DATE:Thu Feb 23 12:42:09 GMT 2017
+// @DATE:Thu Feb 23 18:38:57 GMT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -20,7 +20,7 @@ package controllers {
     }
 
   
-    // @LINE:26
+    // @LINE:28
     def at(file:String): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -49,20 +49,26 @@ package controllers {
   
   }
 
-  // @LINE:22
+  // @LINE:23
   class ReverseUserController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:23
-    def signup(): Call = {
+    // @LINE:24
+    def list(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "user/signup")
+      Call("GET", _prefix + { _defaultPrefix } + "user/list")
     }
   
-    // @LINE:22
+    // @LINE:25
+    def signup(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "user/signup")
+    }
+  
+    // @LINE:23
     def index(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "user")
@@ -77,7 +83,7 @@ package controllers {
     }
 
   
-    // @LINE:17
+    // @LINE:18
     def addProduct(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addProduct")
@@ -87,6 +93,12 @@ package controllers {
     def index(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix)
+    }
+  
+    // @LINE:16
+    def search(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "search")
     }
   
     // @LINE:15
